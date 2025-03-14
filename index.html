@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shower</title>
+    <link rel="stylesheet" href ="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="info">
+            <p>🌡️ <span id="tempature">94</span> <span id="tempature_unit">F</span>°</p>
+        </div>
+        <div class="clock">
+            <p class="time"><span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span></p>
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="toggleTempatureUnit()" id="toggletempature">
+            Toggle Tempature unit
+        </button>
+        <button onclick="toggleClock()" class="clock-timer">
+            Toggle Clock
+        </button>
+        <button onclick="addMinute()" id="minutes">
+            Add 1 minute
+        </button>
+        <button onclick="addSecond()" id="seconds">
+            Add 1 Second
+        </button>
+        <button onclick="Start()" id="start">
+            Start/Stop
+        </button>
+    </div>
+</body>
+</html>
